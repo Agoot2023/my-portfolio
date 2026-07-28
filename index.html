@@ -1,134 +1,289 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
-      color: #333333;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1, h2 {
-      color: #0056b3;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    .container {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-  </style>
+  <title>John Ghai Manyang | AI Builder and Software Developer</title>
+  <meta name="description" content="Portfolio of John Ghai Manyang, an AI builder, software developer, and University of Ottawa Data Science student working across machine learning, automation, databases, and practical software.">
+  <meta name="author" content="John Ghai Manyang">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="John Ghai Manyang | AI Builder and Software Developer">
+  <meta property="og:description" content="Practical AI, data, and software projects built with purpose.">
+  <meta property="og:url" content="https://agoot2023.github.io/my-portfolio/">
+  <meta property="og:image" content="https://agoot2023.github.io/my-portfolio/assets/images/john-ghai-manyang.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://agoot2023.github.io/my-portfolio/">
+  <link rel="icon" type="image/jpeg" href="assets/images/john-ghai-manyang.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js" defer></script>
 </head>
-
 <body>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">My Portfolio</span>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="John Ghai Manyang, home">
+        <span class="brand-mark" aria-hidden="true">JM</span>
+        <span>John Ghai Manyang</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#ai-focus">AI Focus</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-small" href="assets/documents/john-ghai-manyang-resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <div class="container mt-5">
-    <div class="row d-flex align-items-center">
-      <div class="col-md-6">
-        <h1>Hello, I'm John 👋</h1>
-        <p>Welcome to my UI/UX design portfolio.</p>
+  <main id="main-content">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Open to internships and collaborations</p>
+          <h1>I build practical <span>AI, data, and software</span> solutions.</h1>
+          <p class="identity-line">AI Builder · Software Developer · Data Science Student</p>
+          <p class="hero-intro">I’m John, a University of Ottawa Computer Science student focused on turning complex data and real-world problems into useful, understandable technology.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">View my work</a>
+            <a class="button button-secondary" href="#contact">Let’s connect</a>
+          </div>
+          <ul class="hero-facts" aria-label="Professional highlights">
+            <li><strong>Ottawa, Canada</strong><span>Based in</span></li>
+            <li><strong>June 2027</strong><span>Expected graduation</span></li>
+            <li><strong>Canada + Africa</strong><span>Long-term impact</span></li>
+          </ul>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-frame">
+            <img src="assets/images/john-ghai-manyang.jpg" alt="Portrait of John Ghai Manyang" width="1536" height="2048">
+          </div>
+          <div class="portrait-note">
+            <span>Currently building</span>
+            <strong>AI-powered climate and crop insights</strong>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 text-center">
-        <img src="john-profile.jpg" 
-             alt="Photo of John Ghai Manyang"
-             class="rounded-circle shadow"
-             style="border: 2px solid #0056b3; width: 100px;">
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container split-heading">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Technology should solve a problem people actually have.</h2>
+        </div>
+        <div class="prose">
+          <p>I’m completing an Honours Bachelor of Computer Science in the Data Science option at the University of Ottawa. My work sits at the intersection of artificial intelligence, software engineering, databases, and data analysis—with a growing focus on systems that connect models to usable products.</p>
+          <p>I enjoy moving through the full problem-solving cycle: understanding requirements, preparing data, developing and evaluating models, building interfaces, and documenting what I learn. My current honours project brings that approach together through microclimate forecasting and crop-yield analysis.</p>
+          <p>Long term, I want to create responsible, useful technology for communities and organizations in both Canada and Africa. I’m building that path honestly—one tested project, deeper technical skill, and meaningful collaboration at a time.</p>
+        </div>
       </div>
+    </section>
+
+    <section class="section" aria-labelledby="process-title">
+      <div class="container">
+        <p class="section-kicker">How I build</p>
+        <h2 id="process-title">A clear path from question to evidence.</h2>
+        <ol class="process-grid">
+          <li><span>01</span><h3>Understand</h3><p>Define the real problem, users, constraints, and success criteria.</p></li>
+          <li><span>02</span><h3>Research</h3><p>Study requirements, data, comparable solutions, and technical risks.</p></li>
+          <li><span>03</span><h3>Design</h3><p>Choose a focused architecture and map the experience before building.</p></li>
+          <li><span>04</span><h3>Build</h3><p>Develop the smallest useful prototype with clean, maintainable code.</p></li>
+          <li><span>05</span><h3>Improve</h3><p>Test behaviour, measure results, and iterate from real evidence.</p></li>
+          <li><span>06</span><h3>Document</h3><p>Explain decisions, limitations, results, and the next opportunity.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">Capabilities</p><h2>Technical range, organized around outcomes.</h2></div>
+          <p>I use the tools a problem requires and keep learning where the work demands more depth.</p>
+        </div>
+        <div class="skills-grid">
+          <article><span class="skill-number">01</span><h3>AI & Machine Learning</h3><p>Supervised and unsupervised learning, CNNs, LSTMs, model evaluation, preprocessing, exploratory analysis</p></article>
+          <article><span class="skill-number">02</span><h3>Data & Databases</h3><p>PostgreSQL, MySQL, SQLite, relational design, SQL optimization, data visualization</p></article>
+          <article><span class="skill-number">03</span><h3>Software & Web</h3><p>React, Vue, TypeScript, JavaScript, HTML, CSS, Bootstrap, responsive interfaces</p></article>
+          <article><span class="skill-number">04</span><h3>Programming</h3><p>Python, Java, SQL, JavaScript, TypeScript, C</p></article>
+          <article><span class="skill-number">05</span><h3>Automation & Integration</h3><p>Data pipelines, APIs, workflow integration, model-to-application delivery</p></article>
+          <article><span class="skill-number">06</span><h3>Development Tools</h3><p>Git, GitHub, Linux, Jupyter, VS Code, IntelliJ IDEA, Android Studio</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">Selected work</p><h2>Projects with a problem behind them.</h2></div>
+          <p>From machine-learning pipelines to database internals and product interfaces.</p>
+        </div>
+
+        <article class="project-feature">
+          <div class="project-visual">
+            <img src="assets/images/honours-weather-crop-analysis.png" alt="Charts comparing weather forecast error and crop-yield impact across multiple years" loading="lazy">
+          </div>
+          <div class="project-content">
+            <p class="project-label">Honours project · Featured</p>
+            <h3>Microclimate Forecasting & Crop-Yield Intelligence</h3>
+            <p class="project-summary">An end-to-end research and software project connecting CNN/LSTM weather forecasts to a crop model, then measuring how short-term temperature predictions affect simulated yield outcomes.</p>
+            <dl class="project-details">
+              <div><dt>My focus</dt><dd>Weather-model integration, crop-model pipeline, multi-year evaluation, and application interface</dd></div>
+              <div><dt>Approach</dt><dd>Predict three-day average temperatures, inject them into the crop-weather series, and compare baseline against hybrid yield</dd></div>
+              <div><dt>Evidence</dt><dd>Evaluation across nine available years with MAE, RMSE, yield delta, comparison files, and diagnostic charts</dd></div>
+            </dl>
+            <ul class="tags"><li>Python</li><li>TensorFlow</li><li>CNN/LSTM</li><li>Vue</li><li>TypeScript</li></ul>
+            <div class="project-links">
+              <a href="https://github.com/ssdxs15/CSI4900" target="_blank" rel="noopener">View project repository <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/adrien-heymans/weather-prediction-project" target="_blank" rel="noopener">Weather-model research <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">DB</div>
+            <p class="project-label">Database systems</p>
+            <h3>PostgreSQL Symmetric Hash Join</h3>
+            <p>Implemented a symmetric hash join within PostgreSQL to explore streaming join behaviour, dual hash-table maintenance, and database execution trade-offs.</p>
+            <ul class="tags"><li>C</li><li>PostgreSQL</li><li>Query processing</li></ul>
+          </article>
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">EA</div>
+            <p class="project-label">Android application</p>
+            <h3>Event Attendance Management System</h3>
+            <p>A multi-role event platform supporting administrator, organizer, and attendee workflows across registration, approval, cancellation, search, and event management.</p>
+            <ul class="tags"><li>Java</li><li>Android</li><li>Role-based flows</li></ul>
+          </article>
+          <article class="project-card project-card-image">
+            <img src="assets/images/mls-analytics-dashboard.jpg" alt="MLS player analytics dashboard interface" loading="lazy">
+            <div class="card-body">
+              <p class="project-label">Data visualization</p>
+              <h3>MLS Player Analytics Dashboard</h3>
+              <p>An interactive dashboard for filtering and comparing Major League Soccer player performance data.</p>
+              <ul class="tags"><li>React</li><li>JavaScript</li><li>Analytics</li></ul>
+              <a href="https://magical-sfogliatella-0efdc8.netlify.app" target="_blank" rel="noopener">Open live dashboard <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-card-image">
+            <img src="assets/images/antipas-electronics-store.jpg" alt="Antipas Electronics online-store interface" loading="lazy">
+            <div class="card-body">
+              <p class="project-label">Web application</p>
+              <h3>Antipas Electronics Store</h3>
+              <p>A responsive e-commerce experience focused on product discovery, clear categories, and an approachable purchase journey.</p>
+              <ul class="tags"><li>React</li><li>UX</li><li>Responsive UI</li></ul>
+              <a href="https://celebrated-lolly-f994b8.netlify.app" target="_blank" rel="noopener">Open live application <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="archive-link"><a href="https://github.com/Agoot2023?tab=repositories" target="_blank" rel="noopener">Explore more work on GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="ai-focus">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">Direction</p><h2>Where I’m building next.</h2></div>
+          <p>Active areas of learning and long-term professional direction—not finished claims.</p>
+        </div>
+        <div class="focus-grid">
+          <article><span>01</span><h3>AI Automation</h3><p>Connecting models, data, and repeatable workflows to reduce manual work responsibly.</p></article>
+          <article><span>02</span><h3>AI Applications & SaaS</h3><p>Turning useful model capabilities into dependable, understandable software products.</p></article>
+          <article><span>03</span><h3>AI Consulting</h3><p>Learning how to identify valuable use cases and guide practical, low-risk adoption.</p></article>
+          <article><span>04</span><h3>AI for Africa</h3><p>Exploring tools for agriculture, education, operations, and access across African contexts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap-section" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="roadmap-intro">
+          <p class="section-kicker">Current roadmap</p>
+          <h2 id="roadmap-title">Manyang AI Portfolio Platform</h2>
+          <p>This site is a product in progress: a credible professional foundation today, with a measured path toward useful AI capabilities.</p>
+        </div>
+        <ol class="roadmap">
+          <li class="active"><span>V1</span><div><strong>Professional foundation</strong><small>Current</small></div></li>
+          <li><span>V2</span><div><strong>AI portfolio assistant</strong><small>Planned</small></div></li>
+          <li><span>V3</span><div><strong>RAG knowledge base</strong><small>Planned</small></div></li>
+          <li><span>V4</span><div><strong>Automated inquiries</strong><small>Future</small></div></li>
+          <li><span>V5</span><div><strong>Business AI demos</strong><small>Future</small></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="education">
+      <div class="container education-grid">
+        <div>
+          <p class="section-kicker">Education</p>
+          <h2>University of Ottawa</h2>
+          <p class="degree">Honours Bachelor of Computer Science<br><span>Data Science option · Expected June 2027</span></p>
+        </div>
+        <div>
+          <p class="education-label">Relevant areas of study</p>
+          <ul class="study-list">
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Database Systems & Query Processing</li>
+            <li>Algorithms & Data Structures</li>
+            <li>Data Science & Statistical Analysis</li>
+            <li>Software Engineering</li>
+          </ul>
+          <p class="certification"><span>In progress</span> IBM Introduction to Machine Learning — Coursera</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s build something useful.</h2>
+          <p>I’m open to internships, junior opportunities, research collaborations, mentorship, and thoughtful conversations about AI, data, and software.</p>
+          <div class="contact-links">
+            <a href="mailto:johnghaim@gmail.com"><span>Email</span>johnghaim@gmail.com</a>
+            <a href="https://www.linkedin.com/in/john-ghai-manyang" target="_blank" rel="noopener"><span>LinkedIn</span>john-ghai-manyang ↗</a>
+            <a href="https://github.com/Agoot2023" target="_blank" rel="noopener"><span>GitHub</span>@Agoot2023 ↗</a>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:johnghaim@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label for="name">Name<input id="name" name="name" type="text" autocomplete="name" required></label>
+            <label for="email">Email<input id="email" name="email" type="email" autocomplete="email" required></label>
+          </div>
+          <label for="organization">Organization <span>(optional)</span><input id="organization" name="organization" type="text" autocomplete="organization"></label>
+          <label for="reason">Reason for contacting
+            <select id="reason" name="reason" required>
+              <option value="">Choose one</option>
+              <option>Internship or employment</option>
+              <option>Project collaboration</option>
+              <option>Research or mentorship</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label for="message">Message<textarea id="message" name="message" rows="5" required></textarea></label>
+          <button class="button" type="submit">Prepare email</button>
+          <p class="form-note">This opens your email app. Your message is not stored on this website.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">JM</span><span>John Ghai Manyang</span></a><p>Built and continuously improved by John Ghai Manyang.</p></div>
+      <div class="footer-links"><a href="mailto:johnghaim@gmail.com">Email</a><a href="https://github.com/Agoot2023" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/john-ghai-manyang" target="_blank" rel="noopener">LinkedIn</a></div>
+      <p class="copyright">© <span id="current-year">2026</span> John Ghai Manyang</p>
     </div>
-  </div>
-
-  <section class="container mt-4">
-    <h2>About Me</h2>
-    <p>
-      My name is <strong>John Ghai Manyang</strong>, and I'm a Computer Science student with a Data Science option at the <strong>University of Ottawa</strong>.
-      I'm passionate about solving real-world problems using technology, and I'm currently learning UI/UX design, web development, and data analysis as part of my academic journey.
-    </p>
-    <p>
-      In my free time, I love exploring new tech tools, especially those related to artificial intelligence and data visualization.
-      I also enjoy playing and watching soccer and other sports games — it's a great way for me to relax and stay active.
-    </p>
-  </section>
-
-  <section class="container mt-4">
-    <h2>How I Work</h2>
-    <p>
-      I am currently taking a UI/UX design course (SEG3125) as part of my Computer Science program with a Data Science option at the University of Ottawa.
-      Through this course, I am gaining hands-on experience in building user interfaces using HTML, CSS, JavaScript, and Bootstrap.
-    </p>
-    <p>
-      My workflow involves understanding user needs, sketching interface ideas, building functional layouts, and refining designs based on visual communication principles and usability guidelines.
-    </p>
-    <p>
-      I actively explore trusted resources to strengthen my knowledge and skills, including:
-      <ul>
-        <li><a href="https://www.interaction-design.org/literature/article/what-should-a-ux-design-portfolio-contain" target="_blank">Interaction Design Foundation - Portfolio Guide</a></li>
-        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">NN/g - Usability Heuristics for UI Design</a></li>
-        <li><a href="https://www.w3schools.com/bootstrap5/" target="_blank">W3Schools - Bootstrap 5 Documentation</a></li>
-      </ul>
-    </p>
-    <p>
-      As the course progresses, I'll incorporate design concepts such as user-centered design, heuristic evaluation, and visual hierarchy into each of my projects.
-    </p>
-  </section>
-
-  <section class="container mt-4">
-    <h2>My Projects</h2>
-    <div class="row text-center">
-      <div class="col-md-3">
-        <a href="https://agoot2023.github.io/glow-go-hair-salon" target="_blank">
-          <img src="service-new.jpg" alt="Service Site" class="img-fluid rounded shadow mb-2" style="height: 150px;">
-          <p>Design 1: Hairdresser Site (Glow & Go Hair Salon)</p>
-        </a>
-      </div>
-
-      <div class="col-md-3">
-        <a href="https://genuine-treacle-8aa786.netlify.app" target="_blank">
-          <img src="game-new.jpg" alt="Memory Grid Game" class="img-fluid rounded shadow mb-2" style="height: 150px;">
-          <p>Design 2: Small Game (Memory Grid Game)</p>
-        </a>
-      </div>
-
-      <div class="col-md-3">
-        <a href="https://celebrated-lolly-f994b8.netlify.app" target="_blank">
-          <img src="ecommerce-new.jpg" alt="E-Commerce" class="img-fluid rounded shadow mb-2" style="height: 150px;">
-          <p>Design 3: E-Commerce Site (Antipas Electronics)</p>
-        </a>
-      </div>
-
-      <div class="col-md-3">
-        <a href="https://magical-sfogliatella-0efdc8.netlify.app" target="_blank">
-          <img src="analytics-new.jpg" alt="Analytics Dashboard" class="img-fluid rounded shadow mb-2" style="height: 150px;">
-          <p>Design 4: Analytics Dashboard (MLS Soccer Dashboard)</p>
-        </a>
-      </div>      
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
 </body>
 </html>

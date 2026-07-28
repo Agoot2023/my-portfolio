@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agoot2023.github.io/my-portfolio/sitemap.xml
